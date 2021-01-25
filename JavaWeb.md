@@ -81,4 +81,12 @@ ServletResponse接口：响应对象，封装了获取响应信息的方法。 H
   response.setContentType("text/html;charset=utf-8"); // 设置输出的MIME类型（内容的类型）和输出数据的编码方式
   ```
 
-  
+## 二、Filter
+
+程序中的过滤器就是一个特殊的类（javax.servlet.Filter），是JavaWeb的一个组件，是双向的。过滤器可以对所有的请求或者响应做拦截操作。通常可以对请求中的字符编码，登录验证，敏感字过滤，MVC的前端控制器。
+
+FilterChain(过滤器链)：多个过滤器按照一定的顺序,排列起来。
+
+## 三、Listerner
+
+监听器是Web的另一个组件，主要用于监听作用域对象的创建,监听作用域对象属性的添加/删除/替换。
